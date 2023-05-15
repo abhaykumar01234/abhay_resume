@@ -41,8 +41,8 @@ const App = () => {
 
         <Dialog.Root>
           <Dialog.Trigger className="primary">Open Form</Dialog.Trigger>
-          <form method="dialog">
-            <Dialog.Content>
+          <Dialog.Content>
+            <form method="dialog">
               <Dialog.Header>
                 <strong>Application Form</strong>
               </Dialog.Header>
@@ -66,14 +66,15 @@ const App = () => {
                   Submit
                 </button>
               </Dialog.Footer>
-            </Dialog.Content>
-          </form>
+            </form>
+          </Dialog.Content>
         </Dialog.Root>
 
         <Dialog.Root>
           <Dialog.Trigger className="primary">Large Form Open</Dialog.Trigger>
-          <form method="dialog">
-            <Dialog.Content className="large">
+
+          <Dialog.Content className="large">
+            <form method="dialog" className="dialogWrapper">
               <Dialog.Header>Large Modal Text</Dialog.Header>
               <Dialog.Body>
                 <p>
@@ -343,8 +344,8 @@ const App = () => {
               <Dialog.Footer>
                 <Dialog.Close className="primary">Close</Dialog.Close>
               </Dialog.Footer>
-            </Dialog.Content>
-          </form>
+            </form>
+          </Dialog.Content>
         </Dialog.Root>
       </div>
     </div>

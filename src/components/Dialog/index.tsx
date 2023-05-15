@@ -38,10 +38,14 @@ const DialogRoot = ({ children }: ChildrenProp) => {
 const DialogContent = forwardRef<
   HTMLDialogElement,
   HTMLProps<HTMLDialogElement>
->(({ children, ...restProps }, forwardedRef) => {
+>(({ children, className = "", ...restProps }, forwardedRef) => {
   const { ref } = useContext(DialogContext);
   return (
-    <dialog ref={ref || forwardedRef} {...restProps}>
+    <dialog
+      ref={ref || forwardedRef}
+      className={"dialogWrapper " + className}
+      {...restProps}
+    >
       {children}
     </dialog>
   );

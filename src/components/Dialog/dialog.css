@@ -2,12 +2,6 @@ dialog {
   position: fixed;
   inset: 0;
   margin: auto;
-  max-inline-size: min(90vw, 600px);
-  min-inline-size: 300px;
-  max-block-size: 80vh;
-  max-block-size: 80dvb;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   border-radius: 4px;
   outline: none;
   border: none;
@@ -15,7 +9,17 @@ dialog {
   transition: opacity 500ms ease;
 }
 
-dialog.large {
+.dialogWrapper {
+  max-inline-size: min(90vw, 600px);
+  min-inline-size: 300px;
+  max-block-size: 80vh;
+  max-block-size: 80dvb;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+dialog.dialogWrapper.large,
+dialog.dialogWrapper.large .dialogWrapper {
   max-inline-size: min(90vw, 1000px);
 }
 
