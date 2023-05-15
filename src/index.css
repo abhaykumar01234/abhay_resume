@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding-inline: max(calc(50vw - 600px), 1rem);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stack.g0 {
+  gap: 0.5rem;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.primary {
+  background: #ff540a;
+  color: #fff;
+}
+
+*::-webkit-scrollbar {
+  background: rgb(0 0 0 / 0.1);
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+}
+
+input {
+  padding: 0.5rem 1rem;
+}
