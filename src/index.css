@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   padding-inline: max(calc(50vw - 600px), 1rem);
 }
 
