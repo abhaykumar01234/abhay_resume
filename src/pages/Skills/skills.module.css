@@ -1,0 +1,84 @@
+.skillWrapper {
+  padding: 1rem;
+  background: rgb(20 163 219 / 0.15);
+  border-radius: 0.5rem;
+}
+
+.skillWrapper .title {
+  font-weight: 700;
+  color: #333;
+  font-size: 14px;
+}
+
+.skillBox {
+  flex-wrap: wrap;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.chart {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background: radial-gradient(#fff 40%, transparent 41%),
+    conic-gradient(var(--lightColor) 0 var(--score), var(--darkColor) 0);
+
+  text-align: center;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: transform 400ms ease-in;
+}
+
+.chart:hover {
+  transform: translateY(-4px);
+}
+
+.chart .title {
+  font-size: 12px;
+  color: gray;
+}
+
+.chart .score {
+  font-weight: 700;
+  color: var(--darkColor);
+  font-size: 20px;
+}
+
+.secondarySkill {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scoreBox {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.scoreBox .score {
+  width: 20px;
+  height: 20px;
+  background: var(--darkColor);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.scoreBox .score.checked {
+  background: var(--lightColor);
+}
+
+.dialogBody .title {
+  color: var(--lightColor);
+}
+
+.dialogBody .content {
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 1.4;
+}

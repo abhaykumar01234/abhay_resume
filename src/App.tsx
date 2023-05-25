@@ -1,20 +1,19 @@
-import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
-import { ResumePDF } from "~/pages/ResumePDF";
-import { resume } from "~/config";
+import { Experience } from "~/pages/Experience";
+import { Skills } from "./pages/Skills";
 
 const App = () => {
-  const name = resume.profile.name.replace(/ /g, "_");
-  const number = resume.profile.mobile_no.slice(-10);
-  const filename = `resume_${name}_${number}.pdf`;
   return (
-    <>
-      <PDFDownloadLink document={<ResumePDF />} fileName={filename}>
-        Download
-      </PDFDownloadLink>
-      <PDFViewer style={{ width: "100%", minHeight: "100vh" }}>
-        <ResumePDF />
-      </PDFViewer>
-    </>
+    <div className="stack">
+      <div className={["stack", "g0", "center"].join(" ")}>
+        <h3 className="title">My Qualification</h3>
+        <big className="heading">Awesome Journey</big>
+      </div>
+      <br />
+      <div className="columns">
+        <Experience />
+        <Skills />
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,19 @@
+.content {
+  background: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid var(--lightColor);
+  padding: 1rem;
+  max-inline-size: 350px;
+  z-index: var(--zindex-tooltip);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.arrow {
+  fill: #fff;
+  stroke: var(--lightColor);
+  stroke-width: 1px;
+  position: relative;
+  bottom: 2.2px;
+  clip-path: inset(1px 0 0 0);
+}

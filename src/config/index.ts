@@ -18,27 +18,66 @@ const profile = {
 };
 
 const skills = {
-  js: {
-    basic: "Javascript ES5/ES6/ES2019, Typescript",
-    frontend:
-      "React JS, React Hooks, Redux, Context, Apollo Client, React Query, React Native",
-    bff: "Next JS, Remix JS",
-    backend: "Node JS, Express JS, GraphQL",
-    tools:
-      "Webpack 4/5, CRA, Vite, Storybook, Turborepo, NX, Yarn Workspaces with PNPM, Strapi CMS",
-    ci: "Github Actions, Danger JS, Webhook",
-    testing:
-      "Jest, RTL(React Testing Library), MSW(Mock Service Workers), Cypress",
+  primary: {
+    "JS/TS": { label: "Javascript ES5/ES6/ES2019, Typescript", score: "90" },
+    Styling: {
+      label:
+        "HTML, CSS, SCSS, Grid/FlexBox layouts, Styled-Components, Stitches, Bootstrap, MaterialUI, SemanticUI",
+      score: "100",
+    },
+    React: {
+      label:
+        "React JS, React Hooks, Redux, Context, Apollo Client, React Query, React Native",
+      score: "95",
+    },
+    "Backend For Frontend": {
+      label: "Next JS, Remix JS",
+      score: "70",
+    },
+    Node: {
+      label: "Node JS, Express JS, GraphQL",
+      score: "75",
+    },
+    Tools: {
+      label:
+        "Webpack 4/5, CRA, Vite, Storybook, Turborepo, NX, Yarn Workspaces with PNPM, Strapi CMS",
+      score: "85",
+    },
+    CI: {
+      label: "Github Actions, Danger JS, Webhook",
+      score: "60",
+    },
+    Testing: {
+      label:
+        "Jest, RTL(React Testing Library), MSW(Mock Service Workers), Cypress",
+      score: "85",
+    },
   },
-  styling:
-    "HTML, CSS, SCSS, Grid/FlexBox layouts, Styled-Components, Stitches, Bootstrap, MaterialUI, SemanticUI",
-  api: "Rest API Integration and doc(Swagger), Google Places AutoComplete APIs, Razorpay Payment Integration APIs, ServiceNow ITSM, FreshDesk, JIRA(Agile Tool), Confluence, Slack",
-  server: "Linux Shell Scripting, Docker Containerization, Docker Compose",
-  database: "Oracle(DBA), PL/SQL, MongoDB, PostgreSQL, Firestore, DynamoDB",
-  analytics:
-    "DataDog, GTM, LightHouse & GTMetrics Score Optimization, SEO & Meta Tag Mgmt",
-  cloud:
-    "AWS(EC2, Lambda, S3, Elastic BeanStalk, CodeCommit, CodeBuild, CodeDeploy), Heroku/Netlify/Firebase",
+  secondary: {
+    Analytics: {
+      label:
+        "DataDog, GTM, LightHouse & GTMetrics Score Optimization, SEO & Meta Tag Mgmt",
+      score: 60,
+    },
+    Server: {
+      label: "Linux Shell Scripting, Docker Containerization, Docker Compose",
+      score: 100,
+    },
+    API: {
+      label:
+        "Rest API Integration and doc(Swagger), Google Places AutoComplete APIs, Razorpay Payment Integration APIs, ServiceNow ITSM, FreshDesk, JIRA(Agile Tool), Confluence, Slack",
+      score: 90,
+    },
+    Database: {
+      label: "Oracle(DBA), PL/SQL, MongoDB, PostgreSQL, Firestore, DynamoDB",
+      score: 60,
+    },
+    Cloud: {
+      label:
+        "AWS(EC2, Lambda, S3, Cloudfront, Elastic BeanStalk, CodeCommit, CodeBuild, CodeDeploy), Heroku/Netlify/Firebase",
+      score: 80,
+    },
+  },
 };
 
 export const resume = {

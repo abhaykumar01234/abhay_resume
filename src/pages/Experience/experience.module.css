@@ -1,0 +1,57 @@
+.wrapper svg {
+  height: 35px;
+  fill: var(--darkColor);
+}
+
+.experience {
+  letter-spacing: 0.05em;
+  margin-left: 1rem;
+  border-left: 2px solid var(--lightColor);
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.experience:before {
+  content: "";
+  position: absolute;
+  padding: 7px;
+  background: var(--lightColor);
+  border-radius: 50%;
+  top: 0;
+  left: -0.5rem;
+}
+
+.experience:hover:before {
+  background: #fff;
+  padding: 5px;
+  border: 2px solid var(--lightColor);
+}
+
+.experience .expTitle {
+  color: var(--darkColor);
+  font-weight: 700;
+}
+
+.experience .expSubTitle {
+  color: grey;
+  font-size: 14px;
+}
+
+.experience .time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--lightColor);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.experience .time .calendar {
+  fill: var(--lightColor);
+  height: 20px;
+}
+
+.experience .time .covid {
+  height: 20px;
+}
