@@ -1,0 +1,28 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project {
+  /* background: rgba(0, 43, 91, 0.9); */
+  background: var(--cardBg);
+  padding: 2rem;
+  border-radius: 1rem;
+  line-height: 1.4;
+  transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.project:hover {
+  color: #000;
+  background: var(--lightColor2);
+}
+
+.project .name {
+  text-align: center;
+}
+
+.project button {
+  margin-top: auto;
+}

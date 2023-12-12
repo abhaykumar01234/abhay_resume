@@ -16,33 +16,14 @@ import { resume } from "~/config";
 
 export const ResumePDF = () => {
   const renderSkills = () => {
-    interface Skills {
-      [key: string]: Skills | string;
-    }
-
-    const skills = resume.skills;
-    const renderedSkills: JSX.Element[] = [];
-
-    const renderNestedSkills = (skills: Skills, prefix = "") => {
-      for (const key in skills) {
-        const value = skills[key];
-        const label = prefix + key.toUpperCase();
-
-        if (typeof value === "object") {
-          renderNestedSkills(value, `${label.toUpperCase()} - `);
-        } else {
-          renderedSkills.push(
-            <TextWithBullet key={label}>
-              <Text style={styles.bold}>{label}</Text> - {value}
-            </TextWithBullet>
-          );
-        }
-      }
-    };
-
-    renderNestedSkills(skills);
-
-    return renderedSkills;
+    return Object.entries({
+      ...resume.skills.primary,
+      ...resume.skills.secondary,
+    }).map(([title, { label }]) => (
+      <TextWithBullet key={title}>
+        <Text style={styles.bold}>{title}</Text> - {label}
+      </TextWithBullet>
+    ));
   };
 
   const renderFormattedText = (text: string) => {
